@@ -20,6 +20,6 @@ from base.views import greeting
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('django', include('base.urls')),
+    path('django/', include('base.urls')),
     path('greeting/', greeting, name='greeting'),
 ]

@@ -47,12 +47,12 @@ jobs:
     - name: Deploy to EC2
       run: |
         rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" * ec2-user@54.253.52.106:/var/www/super-note-django/
-        ssh -o StrictHostKeyChecking=no ec2-user@54.253.52.106 << 'EOF'
-          cd /var/www/super-note-django
-          virtualenv venv
-          source venv/bin/activate
-          pip install -r requirements.txt
-          python manage.py migrate
-          sudo chown -R nginx:nginx /var/www/super-note-django
-          sudo systemctl restart nginx
-        EOF
+        # ssh -o StrictHostKeyChecking=no ec2-user@54.253.52.106 << 'EOF'
+        #   cd /var/www/super-note-django
+        #   virtualenv venv
+        #   source venv/bin/activate
+        #   pip install -r requirements.txt
+        #   python manage.py migrate
+        #   sudo chown -R nginx:nginx /var/www/super-note-django
+        #   sudo systemctl restart nginx
+        # EOF
