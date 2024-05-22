@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'super_note_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'supernote_django',
         'USER': 'root',
         'PASSWORD': 'O)uqcg3t0k',
